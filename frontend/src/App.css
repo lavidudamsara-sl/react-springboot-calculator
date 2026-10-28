@@ -1,0 +1,42 @@
+.calculator-page {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 32px 18px;
+  box-sizing: border-box;
+  background: #e8eee8;
+}
+
+.calculator-card {
+  width: min(100%, 460px);
+  padding: 36px;
+  border: 1px solid #c8d4c8;
+  border-radius: 20px;
+  background: #f8faf6;
+  box-shadow: 0 20px 45px rgba(37, 61, 43, 0.14);
+}
+
+.calculator-header { margin-bottom: 28px; }
+.kicker { color: #607466; font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+.calculator-header h1 { margin: 8px 0 6px; color: #203328; font-family: 'Trebuchet MS', Aptos, 'Segoe UI', sans-serif; font-size: 34px; letter-spacing: 0; }
+.calculator-header p { color: #607466; font-size: 15px; }
+.calculator-form { display: grid; gap: 18px; }
+.field { display: grid; gap: 8px; color: #304638; font-size: 14px; font-weight: 700; }
+.field input, .field select { width: 100%; box-sizing: border-box; padding: 13px 14px; border: 1px solid #bccbbd; border-radius: 9px; background: #fff; color: #203328; font: inherit; font-size: 16px; }
+.field input:focus, .field select:focus { outline: 3px solid rgba(215, 131, 85, 0.25); border-color: #d78355; }
+.field input::placeholder { color: #9baa9d; }
+.calculate-button { margin-top: 4px; padding: 14px 18px; border: 0; border-radius: 9px; background: #6d55d7; color: #fffaf5; cursor: pointer; font: inherit; font-weight: 700; font-size: 16px; transition: background 120ms ease, transform 120ms ease; }
+.calculate-button:hover:not(:disabled) { background: #5d40bd; }
+.calculate-button:active:not(:disabled) { transform: translateY(1px); }
+.calculate-button:disabled { cursor: wait; opacity: 0.65; }
+.feedback { min-height: 72px; margin-top: 24px; padding: 16px; border: 1px solid #f0c7a6; border-radius: 10px; background: #fff8ef; color: #61351f; box-sizing: border-box; }
+.feedback:empty { display: none; }
+.feedback-label { display: block; margin-bottom: 3px; color: #607466; font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+.feedback strong { color: #8b4a2d; font-size: 28px; }
+.feedback-error { background: #f8e6df; color: #8b3f2a; }
+.feedback-error p { margin: 0; font-size: 14px; }
+
+@media (max-width: 520px) {
+  .calculator-card { padding: 26px 20px; }
+  .calculator-header h1 { font-size: 29px; }
+}

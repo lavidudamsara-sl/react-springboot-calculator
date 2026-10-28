@@ -1,0 +1,23 @@
+# React dependencies and generated files
+node_modules/
+dist/
+
+# Java generated files
+target/
+
+# Editor settings
+.idea/
+.vscode/
+*.iml
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Windows files
+Thumbs.db
+Desktop.ini
